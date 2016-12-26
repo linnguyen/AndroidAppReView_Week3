@@ -15,7 +15,7 @@ import Util.Utils;
  */
 
 public class WeatherHttpClient {
-    public String getWeatherData(String place){
+    public static String getWeatherData(String place){
         HttpURLConnection connection = null;
         InputStream inputStream = null;
         try {
@@ -42,4 +42,6 @@ public class WeatherHttpClient {
         }
         return null;
     }
+
+
 }

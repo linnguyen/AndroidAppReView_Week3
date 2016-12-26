@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.lin.androidreviewapp_week3.app.WeatherApp;
 
+import Util.Utils;
 import data.WeatherHttpClient;
 
 
@@ -48,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         intent = new Intent(MainActivity.this, WeatherApp.class);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), new WeatherHttpClient().getWeatherData("hochiminh"), Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(getApplicationContext(), new WeatherHttpClient().getWeatherData("hồ chí minh"), Toast.LENGTH_LONG).show();
+                        //Log.e("Json day ne:", Utils.BASE_URL + "hồ chí minh" +"&appid="+Utils.APPID);
                         break;
                 }
             }

@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import Util.Utils;
+
 /**
  * Created by lin on 26/12/2016.
  */
@@ -17,10 +19,10 @@ public class HttpHandler {
     public HttpHandler(){
 
     }
-    public String makeServiceCall(String requestUrl){
+    public static String makeServiceCall(String place){
         String response = null;
         try {
-            URL url = new URL(requestUrl);
+            URL url = new URL(Utils.BASE_URL + place +"&appid="+Utils.APPID);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             // read the response
@@ -32,7 +34,7 @@ public class HttpHandler {
         return response;
     }
 
-    private String covertStreamToString(InputStream inputStream) {
+    private static String covertStreamToString(InputStream inputStream) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder stringBuilder = new StringBuilder();
 

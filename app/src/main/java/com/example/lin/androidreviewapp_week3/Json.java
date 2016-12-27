@@ -63,7 +63,8 @@ public class Json extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             HttpHandler httpHandler = new HttpHandler();
             //Makinga a request to url and getting response
-            String url = "http://api.androidhive.info/contacts/";
+            //String url = "http://api.androidhive.info/contacts/";
+            String url = "http://api.openweathermap.org/data/2.5/weather?q=hồ chí minh&appid=be8d3e323de722ff78208a7dbb2dcd6f";
             String jsonStr = httpHandler.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: "+jsonStr);

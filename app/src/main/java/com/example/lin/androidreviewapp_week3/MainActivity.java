@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.example.lin.androidreviewapp_week3.app.WeatherApp;
 
 import Util.Utils;
-import data.WeatherHttpClient;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         intent = new Intent(MainActivity.this, WeatherApp.class);
                         startActivity(intent);
-                      //  Toast.makeText(getApplicationContext(), new WeatherHttpClient().getWeatherData("hồ chí minh"), Toast.LENGTH_LONG).show();
-                        //Log.e("Json day ne:", Utils.BASE_URL + "hồ chí minh" +"&appid="+Utils.APPID);
                         break;
                 }
             }

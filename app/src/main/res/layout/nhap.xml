@@ -2,27 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@mipmap/cloud_backgroud"
+    android:background="#ff1ba1ee"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/cityText"
         android:text="Danang, VietNam"
         android:textColor="#fff"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <LinearLayout
-        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/thumbnailIcon"
             android:background="#fff"
-            android:layout_marginLeft="20dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
         <TextView
             android:id="@+id/tempText"
             android:text="16 C"
@@ -30,11 +29,12 @@
             android:textSize="42sp"
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -91,7 +91,7 @@
         android:text="Last Update"
         android:textSize="16sp"
         android:textColor="#fff"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

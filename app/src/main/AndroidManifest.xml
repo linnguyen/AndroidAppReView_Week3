@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".Thread" />
         <activity android:name=".Json" />
-        <activity android:name=".app.WeatherApp"></activity>
+        <activity android:name=".app.WeatherApp" />
+        <activity android:name=".AsyncTask"></activity>
     </application>
 
 </manifest>

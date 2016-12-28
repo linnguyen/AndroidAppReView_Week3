@@ -58,7 +58,6 @@ public class JSONweatherParser {
             return weather;
         } catch (JSONException e) {
             e.printStackTrace();
-            Log.v("Loi ne", "Loi te le");
         }
         return null;
     }

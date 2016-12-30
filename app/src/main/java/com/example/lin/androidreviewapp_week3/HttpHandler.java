@@ -17,7 +17,6 @@ public class HttpHandler {
     private static final String TAG = HttpHandler.class.getSimpleName();
 
     public HttpHandler(){
-
     }
     public static String makeServiceCall(String place){
         String response = null;
@@ -46,6 +45,6 @@ public class HttpHandler {
         }catch (Exception ex){
             ex.getStackTrace();
         }
-        return  stringBuilder.toString();
+        return stringBuilder.toString();
     }
 }

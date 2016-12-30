@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Week 3</string>
     <string name="change_city">Change city</string>
+    <string name="title_activity_google_maps_app">Map</string>
 </resources>

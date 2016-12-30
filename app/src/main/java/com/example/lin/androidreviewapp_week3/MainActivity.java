@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lvTopic;
     TextView tvTopic;
     ArrayAdapter<String> arrayAdapter;
-    String [] arrTopic = {"Thread", "Webservice", "Asynctask", "Weather app"};
+    String [] arrTopic = {"Thread", "Webservice", "Asynctask", "Weather app", "Google Map Apps"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         intent = new Intent(MainActivity.this, WeatherApp.class);
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent = new Intent(MainActivity.this, GoogleMapsApp.class);
                         startActivity(intent);
                         break;
                 }
